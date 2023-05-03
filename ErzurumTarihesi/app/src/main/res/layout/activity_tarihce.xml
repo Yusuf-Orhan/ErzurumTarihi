@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TarihceActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/erzurum" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Erzurum Tarihçesi"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Erzurum Tarihçesi"
+        app:titleTextColor="#FFFFFF" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Erzurum, Türkiye'nin doğusunda, Doğu Anadolu Bölgesi'nde bulunan bir şehirdir. Tarihi, antik dönemlere kadar uzanmaktadır ve birçok medeniyete ev sahipliği yapmıştır.  Erzurum'un tarihi, ilk olarak MÖ 4000'lere kadar uzanmaktadır. Şehrin bulunduğu bölge, ilk olarak Urartular tarafından fethedilmiştir. Daha sonra Persler, Büyük İskender ve Romalılar gibi farklı medeniyetler bölgeye hakim olmuştur.  Erzurum, 1071 yılında Türkler tarafından fethedilmiştir. Selçuklu Devleti döneminde önemli bir merkez haline gelen şehir, Moğol istilasından sonra bir dönem İlhanlılar tarafından yönetilmiştir. 14. yüzyılda Timur'un akınlarına uğrayan Erzurum, Safevi Devleti ve Osmanlı Devleti arasındaki mücadelelerin yaşandığı bir bölge haline gelmiştir.  Osmanlı Devleti döneminde Erzurum, askeri ve stratejik önemi nedeniyle önemli bir şehir olmuştur. Osmanlı İmparatorluğu'nun çöküş dönemlerinde Rusların saldırısına uğrayan şehir, 1918'de Rus işgaline uğramıştır. 1919'da Türk Kurtuluş Savaşı başladığında Erzurum, Milli Mücadele'nin önemli bir merkezi haline gelmiştir. 23 Temmuz 1919'da Erzurum Kongresi, Milli Mücadele'nin ilk önemli adımlarından biri olarak tarihe geçmiştir.  Cumhuriyet döneminde Erzurum, kültür ve eğitim alanında önemli gelişmeler kaydetmiştir. 1950'li yıllarda şehirde büyük bir kalkınma hamlesi başlatılmış ve altyapı çalışmaları yapılmıştır. 1980'li yıllarda ise üniversite kurulmasıyla birlikte şehirde eğitim alanında büyük gelişmeler yaşanmıştır.  Bugün Erzurum, doğal güzellikleri, tarihi ve kültürel zenginlikleriyle turizm açısından önemli bir şehir haline gelmiştir. Palandöken Dağı'ndaki kayak merkezleri, tarihi yapıları ve doğal güzellikleri ziyaretçiler tarafından yoğun ilgi görmektedir. Ayrıca şehir, önemli bir ticaret ve sanayi merkezi konumundadır."
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
